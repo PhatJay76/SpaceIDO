@@ -38,7 +38,7 @@ export default function Home({ tx, writeContracts, amountSold }) {
           </div>
         </div>
         <div className="total-wallet-box">
-          <h4>Presale Open! Contribute $1.50 BUSD to Recieve 1 SPACE</h4>
+          <h4>Presale Open! Contribute $1.00 BUSD to Recieve 1 SPACE</h4>
           <p className="instructions">
             Contribution Amount:{" "}
             <Input
@@ -84,7 +84,7 @@ export default function Home({ tx, writeContracts, amountSold }) {
             Confirm
           </button>
           &nbsp;
-          <button
+          {/* <button
             className="btn3"
             onClick={async () => {
               const result = tx(writeContracts.SpaceIDO.claim(), update => {
@@ -98,7 +98,7 @@ export default function Home({ tx, writeContracts, amountSold }) {
             }}
           >
             Claim
-          </button>
+          </button> */}
         </div>
         <p className="instructions">Please provide your contribution amount, approve your BUSD and then confirm.</p>
       </div>

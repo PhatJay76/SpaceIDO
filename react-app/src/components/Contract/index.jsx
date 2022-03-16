@@ -1,7 +1,6 @@
 import { Card } from "antd";
 import React, { useMemo, useState } from "react";
 import { useContractExistsAtAddress, useContractLoader } from "eth-hooks";
-import Account from "../Account";
 import DisplayVariable from "./DisplayVariable";
 import FunctionForm from "./FunctionForm";
 import Address from "../Address";

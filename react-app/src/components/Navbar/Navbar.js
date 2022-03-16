@@ -10,7 +10,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo" width="200px" />
 
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onChange={() => setIsMobile(false)}>
-      <li>
+        <li>
           <a className="twitter" href="https://twitter.com/spacemoney9" target="_blank" rel="noreferrer">
             Twitter
           </a>
@@ -26,7 +26,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className="twitter" href="" target="_blank" rel="noreferrer">
+          <a className="twitter" href="https://medium.com/@spacemoneydapp" target="_blank" rel="noreferrer">
             Medium
           </a>
         </li>
@@ -37,7 +37,7 @@ const Navbar = () => {
         </li>
         <li>
           <a className="twitter" href="https://spacemoneydapp.gitbook.io/space-dao/" target="_blank" rel="noreferrer">
-            Doc's
+            Documentation
           </a>
         </li>
         <li>

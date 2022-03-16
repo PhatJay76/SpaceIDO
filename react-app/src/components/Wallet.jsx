@@ -1,5 +1,5 @@
-import { KeyOutlined, QrcodeOutlined, SendOutlined, WalletOutlined } from "@ant-design/icons";
-import { Button, Modal, Spin, Tooltip, Typography } from "antd";
+import { KeyOutlined, QrcodeOutlined, SendOutlined } from "@ant-design/icons";
+import { Button, Modal, Spin, Typography } from "antd";
 import { ethers } from "ethers";
 import QR from "qrcode.react";
 import React, { useState, useEffect } from "react";
@@ -58,26 +58,6 @@ export default function Wallet(props) {
   const [amount, setAmount] = useState();
   const [toAddress, setToAddress] = useState();
   const [pk, setPK] = useState();
-
-  const providerSend = props.provider ? (
-    <Tooltip title="Wallet">
-      <WalletOutlined
-        onClick={() => {
-          setOpen(!open);
-        }}
-        rotate={-90}
-        style={{
-          padding: 7,
-          color: props.color ? props.color : "",
-          cursor: "pointer",
-          fontSize: 28,
-          verticalAlign: "middle",
-        }}
-      />
-    </Tooltip>
-  ) : (
-    ""
-  );
 
   let display;
   let receiveButton;

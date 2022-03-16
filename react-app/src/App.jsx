@@ -13,28 +13,28 @@ import { useStaticJsonRPC } from "./hooks";
 const { ethers } = require("ethers");
 
 // 😬 Sorry for all the console logging
-const DEBUG = true;
+const DEBUG = false;
 const NETWORKCHECK = true;
 const USE_NETWORK_SELECTOR = false;
 const web3Modal = Web3ModalSetup();
 
 // 🛰 providers
-// const providers = [
-//   "https://bsc-dataseed2.defibit.io/",
-//   "https://bsc-dataseed3.defibit.io/",
-//   "https://bsc-dataseed4.defibit.io/",
-// ];
-
 const providers = [
-  "https://data-seed-prebsc-1-s1.binance.org:8545/",
-  "https://data-seed-prebsc-2-s1.binance.org:8545/",
-  "https://data-seed-prebsc-1-s2.binance.org:8545/",
+  "https://bsc-dataseed2.defibit.io/",
+  "https://bsc-dataseed3.defibit.io/",
+  "https://bsc-dataseed4.defibit.io/",
 ];
+
+// const providers = [
+//   "https://data-seed-prebsc-1-s1.binance.org:8545/",
+//   "https://data-seed-prebsc-2-s1.binance.org:8545/",
+//   "https://data-seed-prebsc-1-s2.binance.org:8545/",
+// ];
 
 function App(props) {
   // specify all the chains your app is available on. Eg: ['localhost', 'mainnet', ...otherNetworks ]
   // reference './constants.js' for other networks
-  const networkOptions = ["bsc_testnet"];
+  const networkOptions = ["bsc_mainnet"];
 
   const [injectedProvider, setInjectedProvider] = useState();
   const [address, setAddress] = useState();
