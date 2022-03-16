@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    }
+
+.navbar{
+    display: flex;
+    color: #d0c309;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #171923b0;
+    padding-right: 0px;
+}
+
+.nav-links{
+    font-family: bold;
+    display: flex;
+    color: #f7941d;
+    justify-content: flex-start;
+    list-style: none;
+    width: 70%;
+    align-items: baseline;
+    padding-top: 15px;
+    
+}
+
+.home,
+.skills,
+.contact,
+.signup,
+.twitter,
+.about{
+    color: #d0c309;
+    font-size: 23px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
+    .log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+
+    }
+
+    .nav-links{
+        display: none ;
+    }
+
+    ul > li{
+        padding: 20px;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        color: #d0c309;
+        background-color: aliceblue;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        padding: 50px;
+        top:30px;
+    }
+    .home,
+    .skills,
+    .contact,
+    .signup,
+    .about{
+        color: #d0c309;
+        text-align: center;
+        padding: 32px;
+        padding-bottom: 32px;
+        width: 100%;
+        transition: all 0.5s ease-out;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: #d0c309;
+        background-color: #1862f7;
+        border: none;
+        outline: none;
+        top: 30px;
+        right: 25px;
+    }
+
+}
+
+.logo{
+    font-size: 300px;
+}
